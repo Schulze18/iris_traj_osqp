@@ -1,0 +1,10 @@
+<launch>
+    <param name="use_sim_time" value="true" />
+
+	<node name="iris_trajetoria" type="iris_trajectory" pkg="iris_traj_osqp" output="screen">
+		 <param name="name_topic_ref" value="my_iris/iris_ref" />
+		 <param name="name_topic_state" value="gazebo_client/iris_state" />
+	</node>
+
+
+</launch>
